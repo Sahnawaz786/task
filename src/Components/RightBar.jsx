@@ -1,33 +1,52 @@
 import React from 'react';
-import { FaSearch } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
-import { FaFile } from "react-icons/fa";
-import { FaFolderOpen } from "react-icons/fa";
-import { IoTrashBin } from "react-icons/io5";
-import { FaPen } from "react-icons/fa";
-
+import { FaSearch } from 'react-icons/fa';
+import styles from '../style.module.css';
 
 const RightBar = () => {
   return (
-    <div className='rightbar-conatiner'>
-      <div className='right-bar'>
-        <div className='right-bar-logo'>
-          <p><IoMdSettings/></p>
-          <p><FaFile/></p>
-          <p><FaFolderOpen/></p>
-          <p><IoTrashBin/></p>
-          <p><FaPen/></p>
+    <div className={styles.rightbarConatiner}>
+      <div className={styles.rightBar}>
+        <div className={styles.rightBarLogo}>
+          <img
+            src='https://cdn-icons-png.freepik.com/512/10703/10703269.png'
+            width={30}
+            height={30}
+            alt=''
+          />
+          <img
+            src='https://cdn-icons-png.freepik.com/512/7959/7959420.png'
+            width={30}
+            height={30}
+            alt=''
+          />
+          <img
+            src='https://cdn-icons-png.freepik.com/512/5994/5994710.png'
+            width={30}
+            height={30}
+            alt=''
+          />
+          <img
+            src='https://cdn-icons-png.freepik.com/512/9740/9740598.png'
+            width={30}
+            height={30}
+            alt=''
+          />
+          <img
+            src='https://cdn-icons-png.freepik.com/512/3425/3425921.png'
+            width={30}
+            height={30}
+            alt=''
+          />
         </div>
-        <div style={{display:"flex",gap:"5px",alignItems:"center"}}>
-            <FaSearch/>
-            <input type="text" name="" width={300} height={300} id="" />
+        <div className={styles.searchSection}>
+          <FaSearch />
+          <input type='text' name='' width={300} height={300} id='' />
         </div>
       </div>
-      
 
       <table>
-    <thead>
-        <tr>
+        <thead>
+          <tr>
             <th>Supplier Name</th>
             <th>Supplier Type</th>
             <th>Number</th>
@@ -37,11 +56,10 @@ const RightBar = () => {
             <th>Created By</th>
             <th>Created Date</th>
             <th>state</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
             <td>Medtronic</td>
             <td>Manufacturer</td>
             <td>000091</td>
@@ -51,8 +69,8 @@ const RightBar = () => {
             <td>STEPHEN</td>
             <td>01-01-2024</td>
             <td>Open ＠</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Medtronic</td>
             <td>Manufacturer</td>
             <td>000091</td>
@@ -62,8 +80,8 @@ const RightBar = () => {
             <td>STEPHEN</td>
             <td>01-01-2024</td>
             <td>Open ＠</td>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>Medtronic</td>
             <td>Manufacturer</td>
             <td>000091</td>
@@ -73,11 +91,9 @@ const RightBar = () => {
             <td>STEPHEN</td>
             <td>01-01-2024</td>
             <td>Open ＠</td>
-        </tr>
-    </tbody>
-</table>
-
-
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

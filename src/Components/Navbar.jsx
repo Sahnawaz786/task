@@ -1,13 +1,15 @@
 import React from 'react';
+import styles from '../style.module.css';
+
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className={styles.navbar}>
       <div>
-        <p className='text'>ThinkPLM</p>
+        <p className={styles.text}>ThinkPLM</p>
       </div>
       <div>
-        <p className='text'>login by : Talib Ali</p>
+        <p className={styles.text}>login by : Talib Ali</p>
       </div>
     </div>
   );
