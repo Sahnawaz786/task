@@ -1,20 +1,18 @@
-import Navbar from './Components/Navbar';
-import RightBar from './Components/RightBar';
-import LeftBar from './Components/LeftBar';
-import styles from './style.module.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Container from './Components/Container';
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <Navbar/>
-        <div className={styles.sidebarSection}>
-        <LeftBar/>
-        <RightBar/>
-        </div>
-        
-      </div>
+      <Router>
+       <Container/>
+        <Routes>
+          <Route path="/details" element={<></>} />
+          <Route path="/onboard-status" element={<></>} />
+          <Route path="/contract-details" element={<></>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

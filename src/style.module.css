@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    cursor: pointer;
   }
   
   .leftbarOptions{
@@ -53,6 +54,7 @@
   
   .leftbarOptions a{
     margin-bottom: 3px;
+    text-decoration: none;
   }
 
   .rightBar{
